@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+   
+
 </head>
 <body>
-    <h1>reproductor de video</h1>
+    <div class="container">
+        <h1 class="titulo">Video Galleria</h1>
+        <div class="behind">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/fJ2ptJKzT-sDkpfO/scene.splinecode" background="rgba(218,81,221,0.2)"></spline-viewer>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="./assets/img/fuego.jpg" alt="Fuego" width="100%">
+                    <img src="./assets/img/play.png" class="play-btn" onclick="playVideo('./assets/videos/192687-893427276_small.mp4')" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./assets/img/fuego.jpg" alt="">
+                        <img src="./assets/img/play.png" class="play-btn" onclick="playVideo('./assets/videos/auto.mp4')" alt="">
+                    </div>
+                    <p>reproduce multiples videos</p> 
+                      <p>video galeria</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./assets/img/fuego.jpg" alt="">
+                        <img src="./assets/img/play.png" class="play-btn" onclick="playVideo('./assets/videos/cascada.mp4')" alt="">
+                    </div>
+                    <p class="letra">reproduce multiples videos</p> 
+                    <p class="letra">video galeria</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./assets/img/fuego.jpg" alt="">
+                        <img src="./assets/img/play.png" class="play-btn" onclick="playVideo('./assets/videos/celular.mp4')" alt="">
+                    </div>
+                    <p>reproduce multiples videos</p> 
+                      <p>video galeria</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player">
+        <video width="100%" controls autoplay id="myVideo" src="">
+            <source src="./assets/videos/184734-873923034_small.mp4" type="video/mp4"> 
+        </video>
+        <img src="./assets/img/cerrar.png" class="close-btn" onclick="stopVideo()" alt="">
+    </div>
+
+
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
